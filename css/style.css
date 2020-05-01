@@ -696,6 +696,9 @@ img {
         flex-basis: 100%;
     margin-bottom: 60px;
   }
+  .form__label {
+    margin-top: 20px;
+  }
 }
 
 .catalog {
