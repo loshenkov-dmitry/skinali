@@ -23,6 +23,7 @@
 
 @font-face {
   font-family: 'Proxima Nova Semibold';
+  font-display: swap;
   src: url("../fonts/ProximaNova-Semibold.eot");
   src: url("../fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
   font-weight: normal;
@@ -31,6 +32,7 @@
 
 @font-face {
   font-family: 'Proxima Nova Light';
+  font-display: swap;
   src: url("../fonts/ProximaNova-Light.eot");
   src: url("../fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype");
   font-weight: normal;
@@ -350,7 +352,7 @@ img {
 .navbar__phone {
   display: block;
   margin-bottom: 5px;
-  font-style: 19px;
+  font-size: 19px;
   font-family: 'Proxima Nova Semibold', sans-serif;
   text-decoration: none;
   color: #262626;
@@ -398,7 +400,7 @@ img {
 .menu__link {
   text-decoration: none;
   text-transform: uppercase;
-  font-style: 17px;
+  font-size: 17px;
   color: #ffffff;
 }
 
@@ -454,6 +456,15 @@ img {
 @media (max-width: 991px) {
   .navbar__mobile, .navbar__landline {
     display: none;
+  }
+  .menu__link {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 770px) {
+  .menu__link {
+    font-size: 10px;
   }
 }
 
